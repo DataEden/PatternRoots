@@ -1,9 +1,8 @@
 # PatternRoots
-**🌍 A multi-language pattern matching lab rooted in regex logic — Python, Java, YAML &amp; more.**
-**🌱 Part of the DataEden ecosystem — exploring patterns in nature, data, and code.**
+### **🌍 A multi-language pattern matching lab rooted in regex logic — Python, Java, YAML &amp; more.**
+### **🌱 Part of the DataEden ecosystem — exploring patterns in nature, data, and code.**
 
-🌿 PatternRoots – A Cross-Language Pattern Matching Playground
-"Where code meets nature and patterns take root."
+### **🌿 PatternRoots – A Cross-Language Pattern Matching Playground "Where code meets nature and patterns take root."**
 
 PatternRoots is a language-agnostic, multi-environment repository for building and experimenting with regular expressions and pattern-matching logic across Python, Java, YAML, and more.
 
