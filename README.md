@@ -17,4 +17,4 @@ This is more than a regex sandbox — it’s a garden of pattern-driven micropro
 
 📄 Tutorials, README breakdowns, and project board tracking
 
-Whether you’re parsing JSON, scanning logs, building form validators, or scraping structured content — PatternRoots lets you cultivate strong cross-language regex roots, one project at a time.
+Whether you’re parsing JSON, scanning logs, building form validators, or scraping structured content — **PatternRoots** lets you cultivate strong cross-language regex roots, one project at a time.
