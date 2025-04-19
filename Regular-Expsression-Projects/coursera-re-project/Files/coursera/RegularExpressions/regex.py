@@ -26,10 +26,12 @@ def regex_email(str):
     else:
         print("No email prefix found, searcching for email address...")
         # Check if the string matches the regex pattern for a valid email address
-        p = re.compiler(r'^')
-        
-
-    return 'invalid email' 
+        p = re.compiler(r'^[a-z0-9_.-]+@[a-z0-9.-]+.{3}[a-z]$')
+        m = p.match(str)
+        if m:
+            return 'email:' + m.group()  
+        else:
+             return 'invalid email' 
     """
     This function takes a string and returns True if it is a valid email address, otherwise False.
     A valid email address is defined as:
