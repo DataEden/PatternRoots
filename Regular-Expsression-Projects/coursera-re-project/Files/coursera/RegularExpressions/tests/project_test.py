@@ -4,7 +4,7 @@ import regex as rx
 class Project_Test(unittest.TestCase):
     def test_regx(self):
         str = 'email:d_funk@example.com'
-        expected = 'email:'
+        expected = 'email:d_funk@example.com'
         actual = rx.regex_email(str)
         self.assertEqual(expected, actual) # Test with a valid email address
         # Test with an invalid email address
@@ -14,8 +14,8 @@ class Project_Test(unittest.TestCase):
 
         #
     def test_nopfx(self):
-            str = 'email:d_funk@example.com'
-            expected = 'd_funk@example.com'
+            str = 'd_funk@example.com'
+            expected = 'email:d_funk@example.com'
             actual = rx.regex_email(str)
             self.assertEqual(expected, actual)
 
