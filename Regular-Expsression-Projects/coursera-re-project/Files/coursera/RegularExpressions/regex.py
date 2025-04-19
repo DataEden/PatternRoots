@@ -2,7 +2,7 @@
 import re
 
 def regex_email(str):
-    regex = r'^email:[a-z0-9_.-]+@[a-Z0-9.-]+[a-z].{3}$'
+    regex = r'^email:[a-z0-9_.-]+@[a-z0-9.-]+.{3}[a-z]$'
     pm = re.compile(r'email:')
 
     m = pm.match(str)
@@ -12,9 +12,10 @@ def regex_email(str):
         if m:
             return m.group()
         else:
-            return 'invalid email address'
-    
-    return 'invalid email address' 
+            return 'invalid email'
+    else:
+        
+    return 'invalid email' 
     """
     This function takes a string and returns True if it is a valid email address, otherwise False.
     A valid email address is defined as:
