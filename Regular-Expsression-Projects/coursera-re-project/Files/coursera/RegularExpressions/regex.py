@@ -29,10 +29,11 @@ def regex_email(str):
         p = re.compile(r'^[a-z0-9_.-]+@[a-z0-9.-]+.{3}[a-z]$')
         m = p.match(str)
         if m:
-            return 'email:' + m.group()  
+            result = p.subn('email:' + m.group(), m.group())
+            return   result[0]
         else:
             print('invalid email')
-            
+              
     return 'invalid email' 
     """
     This function takes a string and returns True if it is a valid email address, otherwise False.

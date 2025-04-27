@@ -13,10 +13,13 @@ if not os.path.isfile(fname):
 with open(fname, mode='r', encoding='utf8') as f:
     contacts = f.readlines()
 
+clist = []
 for str in contacts:
     cstr = regex.regex_email(str)
+    if 'email:' in cstr:
+        clist.append(cstr + '\n')
 
 
-
-
-
+with open(sys.argv[2], mode='w', encoding='utf8') as f:
+    f.writelines(clist)
+    print(f"File {sys.argv[2]} created successfully.")
