@@ -1,7 +1,7 @@
 
 import re # Import the regular expression module
 
-def regex_email(str): 
+def regex_email(str)-> str: 
     """ 
     This function takes a string and returns True if it is a valid email address, otherwise False.
     A valid email address is defined as:
@@ -10,6 +10,7 @@ def regex_email(str):
         str (str): The input string to be checked.
 
     return: 
+        str: The input string if it is a valid email address, otherwise 'invalid email'.
 
     """
     regex = r'^email:[a-z0-9_.-]+@[a-z0-9.-]+.{3}[a-z]$'
