@@ -10,6 +10,20 @@
 
 ---
 
+## README Render Safety Test
+
+This is a harmless iframe render test.
+
+<iframe
+  title="DID iframe safety test"
+  srcdoc="<p style='font-family: sans-serif;'>IFRAME TEST RENDERED</p>"
+  width="100%"
+  height="120"
+  style="border: 2px solid #2563eb; border-radius: 8px;"
+></iframe>
+
+---
+
 **PatternRoots** is a language-agnostic, multi-environment repository for developing, testing, and sharing regular expression projects and broader pattern-matching workflows. Designed for developers, data scientists, and curious learners, this space grows regex-powered microprojects across Python, Java, YAML, and beyond.
 
 This isn't just a regex sandbox — it’s a 🌱 _garden of pattern-rich experimentation_ with full tooling support and intentional learning pathways.
